@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bosses</title></head><body><div style="max-width:900px;margin:24px auto;font-family:system-ui,Arial;"><h1>Bosses</h1><div id="list">Loading...</div><div style="margin-top:12px"><button id="sync">Sync</button></div></div><script>
+const base = window.VITE_BACKEND_URL || '';
+async function load(){ try{ const res = await fetch(base + '/api/bosses'); const j = await res.json(); const list = document.getElementById('list'); list.innerHTML = ''; (j.bosses||[]).forEach(b=>{ const el = document.createElement('div'); el.style.border='1px solid #ddd'; el.style.padding='8px'; el.style.margin='6px 0'; el.innerHTML = `<strong>${b.name}</strong><div>${b.description||''}</div>`; list.appendChild(el); }); }catch(e){ document.getElementById('list').textContent='Error'; console.error(e);} }
+document.getElementById('sync').addEventListener('click', async()=>{ await fetch(base + '/api/bosses/sync', {method:'POST'}); load(); });
+load();
+</script></body></html>
