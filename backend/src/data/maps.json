@@ -1,0 +1,38 @@
+[
+  {
+    "id": "customs",
+    "slug": "customs",
+    "name": "Customs",
+    "imageUrl": "https://tarkov.dev/images/customs-map.jpg",
+    "pois": [
+      {
+        "id": "dorms",
+        "name": "Dorms",
+        "type": "loot",
+        "coords": {
+          "lat": 55.75,
+          "lng": 37.61
+        },
+        "iconUrl": "https://tarkov.dev/icons/poi/loot.png"
+      }
+    ]
+  },
+  {
+    "id": "shoreline",
+    "slug": "shoreline",
+    "name": "Shoreline",
+    "imageUrl": "https://tarkov.dev/images/shoreline-map.jpg",
+    "pois": [
+      {
+        "id": "resort",
+        "name": "Resort",
+        "type": "loot",
+        "coords": {
+          "lat": 55.76,
+          "lng": 37.65
+        },
+        "iconUrl": "https://tarkov.dev/icons/poi/loot.png"
+      }
+    ]
+  }
+]

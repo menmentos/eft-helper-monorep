@@ -1,0 +1,18 @@
+[
+  {
+    "id": "q1",
+    "name": "Debut",
+    "giver": "Prapor",
+    "description": "Kill 5 Scavs",
+    "objectives": [
+      "Kill 5 Scavs"
+    ],
+    "locations": [
+      {
+        "mapId": "customs",
+        "name": "Dorms"
+      }
+    ],
+    "guide": "Go to Dorms."
+  }
+]
